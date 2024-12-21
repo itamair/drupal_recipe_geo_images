@@ -1,0 +1,13 @@
+name: 'Drupal Geo Images'
+description: 'Enables advanced Geomapping functionalities with Media Images'
+type: 'Geomapping'
+
+install:
+  - node
+  - media
+  - media_library_importer
+
+config:
+  import:
+    media: '*'
+

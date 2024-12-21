@@ -1,0 +1,20 @@
+{
+    "name": "drupal/drupal_geo_images,,
+    "description": "Enables advanced Geomapping functionalities with Media Images",
+    "keywords": ["recipe", "Drupal recipes", "drupal recipe geomapping media images"],
+    "type": "drupal-recipe",
+    "license": "GPL-2.0-or-later",
+    "authors": [
+        {
+            "name": "Italo Mairo",
+            "role": "Maintainer",
+            "homepage": "https://www.drupal.org/u/itamair"
+        }
+    ],
+    "require": {
+        "drupal/geofield": "^1.62",
+        "drupal/leaflet": "^10.2",
+        "drupal/geocoder": "^4.26",
+        "drupal/media_library_importer": "^2.1"
+    }
+}

@@ -1,2 +1,2 @@
-# drupal_geo_images
+# Drupal Geo Images
 Enables advanced Geomapping functionalities with Media Images
