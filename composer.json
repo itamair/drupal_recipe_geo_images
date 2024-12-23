@@ -1,7 +1,7 @@
 {
-    "name": "itamair/drupal-geo-images",
-    "description": "Enables advanced Geo-mapping functionalities with Media Images",
-    "keywords": ["recipe", "Drupal recipes", "drupal recipe geomapping media images"],
+    "name": "itamair/drupal-recipe-geo-images",
+    "description": "A Drupal Recipe that enables advanced Geo-mapping functionalities with Media Images",
+    "keywords": ["#recipe", "#drupal recipes", "drupal recipe", "drupal media", "drupal geomapping"],
     "type": "drupal-recipe",
     "license": "GPL-2.0-or-later",
     "authors": [
