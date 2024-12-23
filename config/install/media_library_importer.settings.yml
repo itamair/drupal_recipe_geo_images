@@ -1,0 +1,10 @@
+exclude_styles: true
+import_files_to_media_location: true
+import_folder: /var/www/html/web/sites/default/files
+media_types_import:
+  image: image
+  document: '0'
+  remote_video: '0'
+  svg_image: '0'
+media_types_fields:
+  image: field_media_image
