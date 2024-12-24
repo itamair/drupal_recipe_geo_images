@@ -9,7 +9,6 @@ install:
   - geofield
   - leaflet_views
   - leaflet_markercluster
-  - geocoder_address
   - geocoder_geofield
 config:
   import:
