@@ -1,6 +1,6 @@
-name: 'Drupal Geo Images'
-description: 'Enables advanced Geomapping functionalities with Media Images'
-type: 'Geomapping'
+name: Drupal Recipe Geo Images'
+description: 'Enables advanced Geo Mapping functionalities with Media Images'
+type: 'Geo Mapping'
 install:
   - node
   - media
