@@ -7,6 +7,8 @@ dependencies:
     - media.type.geo_image
   module:
     - image
+_core:
+  default_config_hash: '-pI_ssrDutHlbLRPxmEm0wtpI8fzNhKRaQ9ebwCE-W8'
 id: media.geo_image.field_media_image
 field_name: field_media_image
 entity_type: media
@@ -20,17 +22,17 @@ default_value_callback: ''
 settings:
   handler: 'default:file'
   handler_settings: {  }
-  file_directory: '[date:custom:Y]-[date:custom:m]'
+  file_directory: geo_images
   file_extensions: 'png gif jpg jpeg webp'
-  max_filesize: ''
+  max_filesize: 10MB
   max_resolution: ''
   min_resolution: ''
   alt_field: true
-  alt_field_required: true
+  alt_field_required: false
   title_field: false
   title_field_required: false
   default_image:
-    uuid: null
+    uuid: ''
     alt: ''
     title: ''
     width: null
