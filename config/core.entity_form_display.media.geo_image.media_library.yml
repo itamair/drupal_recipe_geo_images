@@ -12,6 +12,8 @@ dependencies:
     - media.type.geo_image
   module:
     - svg_image
+_core:
+  default_config_hash: 64qtbYunJXw4IDjXRYCF5HBgkq6I8VDR2DZ4nCznr2E
 id: media.geo_image.media_library
 targetEntityType: media
 bundle: geo_image

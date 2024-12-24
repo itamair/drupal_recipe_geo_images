@@ -2,9 +2,10 @@ exclude_styles: true
 import_files_to_media_location: false
 import_folder: /var/www/html/web/sites/default/files/photo_albums
 media_types_import:
-  image: image
+  geo_image: geo_image
   document: '0'
+  image: '0'
   remote_video: '0'
   svg_image: '0'
 media_types_fields:
-  image: field_media_image
+  geo_image: field_media_image

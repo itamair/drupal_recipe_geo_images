@@ -10,9 +10,11 @@ dependencies:
     - image.style.thumbnail
     - media.type.geo_image
   module:
-    - geofield
+    - leaflet
     - path
     - svg_image
+_core:
+  default_config_hash: sIMrZnm19Prpf_KgD-KCmGIxuUx9KIhsQucfO4S2Lb4
 id: media.geo_image.default
 targetEntityType: media
 bundle: geo_image
@@ -39,11 +41,78 @@ content:
     settings: {  }
     third_party_settings: {  }
   field_geofield:
-    type: geofield_latlon
+    type: leaflet_widget_default
     weight: 2
     region: content
     settings:
-      html5_geolocation: false
+      map:
+        leaflet_map: 'OSM Mapnik'
+        height: 500
+        auto_center: 1
+        map_position:
+          force: false
+          center:
+            lat: 0.0
+            lon: 0.0
+          zoomControlPosition: topleft
+          zoom: 5
+          minZoom: 1
+          maxZoom: 18
+          zoomFiner: 0
+        scroll_zoom_enabled: 1
+      input:
+        show: true
+        readonly: false
+      toolbar:
+        position: topright
+        marker: defaultMarker
+        drawPolyline: true
+        drawRectangle: true
+        drawPolygon: true
+        drawCircle: false
+        drawText: false
+        editMode: true
+        dragMode: true
+        cutPolygon: false
+        removalMode: true
+        rotateMode: false
+      reset_map:
+        control: true
+        options: '{"position":"topleft","title":"Reset View"}'
+      map_scale:
+        control: true
+        options: '{"position":"bottomright","maxWidth":100,"metric":true,"imperial":false,"updateWhenIdle":false}'
+      fullscreen:
+        control: true
+        options: '{"position":"topleft","pseudoFullscreen":false}'
+      path: '{"color":"#3388ff","opacity":"1.0","stroke":true,"weight":3,"fill":"depends","fillColor":"*","fillOpacity":"0.2","radius":"6"}'
+      locate:
+        control: false
+        options: '{"position":"topright","setView":"untilPanOrZoom","returnToPrevBounds":true,"keepCurrentZoomLevel":true,"strings":{"title":"Locate my position"}}'
+        automatic: false
+      geocoder:
+        control: false
+        settings:
+          autocomplete:
+            placeholder: 'Search Address'
+            title: 'Search an Address on the Map'
+          position: topright
+          input_size: 20
+          providers:
+            file:
+              weight: 0
+              checked: false
+            nominatim:
+              weight: 0
+              checked: false
+          min_terms: 4
+          delay: 800
+          zoom: 16
+          popup: false
+          options: ''
+      geometry_validation: '1'
+      feature_properties:
+        values: ''
     third_party_settings: {  }
   field_media_image:
     type: image_image
