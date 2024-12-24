@@ -1,14 +1,28 @@
 name: 'Drupal Geo Images'
 description: 'Enables advanced Geomapping functionalities with Media Images'
 type: 'Geomapping'
-
 install:
   - node
   - media
   - media_library_importer
-
+  - media_image_exif_importer
+  - geofield
+  - leaflet_views
+  - leaflet_markercluster
+  - geocoder_address
+  - geocoder_geofield
 config:
   import:
     media: '*'
-    media_library_importer: NULL
-
+  actions:
+    media_library_importer.settings:
+      simpleConfigUpdate:
+        import_files_to_media_location: false
+        import_folder: /var/www/html/web/sites/default/files/photo_albums
+        media_types_import:
+          image: image
+          document: '0'
+          remote_video: '0'
+          svg_image: '0'
+        media_types_fields:
+          image: field_media_image

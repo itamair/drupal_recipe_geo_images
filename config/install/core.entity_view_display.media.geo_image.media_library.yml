@@ -1,0 +1,43 @@
+uuid: 3f1044ec-37a9-436d-8079-720f2e36af39
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.media.media_library
+    - field.field.media.geo_image.field_address
+    - field.field.media.geo_image.field_exif_creation_date
+    - field.field.media.geo_image.field_geofield
+    - field.field.media.geo_image.field_media_image
+    - image.style.medium
+    - media.type.geo_image
+  module:
+    - svg_image
+id: media.geo_image.media_library
+targetEntityType: media
+bundle: geo_image
+mode: media_library
+content:
+  thumbnail:
+    type: image
+    label: hidden
+    settings:
+      image_link: ''
+      image_style: medium
+      image_loading:
+        attribute: lazy
+      svg_attributes:
+        width: null
+        height: null
+      svg_render_as_image: true
+    third_party_settings: {  }
+    weight: 0
+    region: content
+hidden:
+  created: true
+  field_address: true
+  field_exif_creation_date: true
+  field_geofield: true
+  field_media_image: true
+  langcode: true
+  name: true
+  uid: true

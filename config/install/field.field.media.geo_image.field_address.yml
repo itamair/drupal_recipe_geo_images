@@ -1,0 +1,40 @@
+uuid: a7b97f9c-3ad9-4d9c-b8bb-66a8f01b82bb
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.media.field_address
+    - media.type.geo_image
+  module:
+    - geocoder_field
+third_party_settings:
+  geocoder_field:
+    method: reverse_geocode
+    weight: 2
+    field: field_geofield
+    skip_not_empty_value: false
+    disabled: false
+    hidden: false
+    providers:
+      - nominatim
+    dumper: addresstext
+    delta_handling: default
+    failure:
+      handling: preserve
+      status_message: true
+      log: true
+    geocode:
+      field: revision_log_message
+      delta_handling: default
+id: media.geo_image.field_address
+field_name: field_address
+entity_type: media
+bundle: geo_image
+label: Address
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string
