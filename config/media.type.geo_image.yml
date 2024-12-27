@@ -21,6 +21,8 @@ third_party_settings:
     unpublish_revision: false
   crop:
     image_field: field_media_image
+_core:
+  default_config_hash: aJziyQ1NQoSQZxVQo2pa90L_k8ZFn971BfxbJJ2-Qi8
 id: geo_image
 label: 'Geo Image'
 description: 'Use local reusable media with geofield location.'

@@ -4,6 +4,8 @@ status: true
 dependencies:
   module:
     - media
+_core:
+  default_config_hash: YmKIBpIDaCjvryinBx_4pxEjYc8tpY1On3Lge3kePr0
 id: media.field_exif_creation_date
 field_name: field_exif_creation_date
 entity_type: media

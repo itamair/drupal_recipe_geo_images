@@ -5,6 +5,8 @@ dependencies:
   module:
     - geofield
     - media
+_core:
+  default_config_hash: KAjIXBlEoyQrwzySc8XURhKp3Y8pUowRDs-7dLHFNhw
 id: media.field_geofield
 field_name: field_geofield
 entity_type: media

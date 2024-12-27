@@ -4,6 +4,8 @@ status: true
 dependencies:
   module:
     - media
+_core:
+  default_config_hash: DBIwHirmZiYZTPVgmdYJBo_RC83S4BrsCWXqdHF2Quc
 id: media.field_address
 field_name: field_address
 entity_type: media

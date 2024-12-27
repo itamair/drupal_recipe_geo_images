@@ -24,6 +24,8 @@ third_party_settings:
       handling: preserve
       status_message: true
       log: true
+_core:
+  default_config_hash: 2bbFVxG7Z4Z-qGXlLnMSXrjDRXxHN_k3J8-c_KT7HI0
 id: media.geo_image.field_geofield
 field_name: field_geofield
 entity_type: media

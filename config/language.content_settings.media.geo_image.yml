@@ -4,6 +4,8 @@ status: true
 dependencies:
   config:
     - media.type.geo_image
+_core:
+  default_config_hash: T19q654Fneli5GCLuTzt-b18p-k0VbT6_ObyaN135mo
 id: media.geo_image
 target_entity_type_id: media
 target_bundle: geo_image

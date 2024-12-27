@@ -55,9 +55,9 @@ content:
             lat: 0.0
             lon: 0.0
           zoomControlPosition: topleft
-          zoom: 16
+          zoom: 15
           minZoom: 1
-          maxZoom: 20
+          maxZoom: 18
           zoomFiner: 0
         scroll_zoom_enabled: 1
       input:

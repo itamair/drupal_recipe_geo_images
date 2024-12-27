@@ -26,6 +26,8 @@ third_party_settings:
     geocode:
       field: revision_log_message
       delta_handling: default
+_core:
+  default_config_hash: SrmXwPdl_3ZJ_1NApGGPRKTzQfHQ_ATyrlKSvSF87LY
 id: media.geo_image.field_address
 field_name: field_address
 entity_type: media

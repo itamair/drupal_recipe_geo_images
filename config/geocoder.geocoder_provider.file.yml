@@ -4,6 +4,8 @@ status: true
 dependencies:
   module:
     - geocoder_field
+_core:
+  default_config_hash: kUrPCus2lmgRvaTVjKGRI80qhcf2_lnu9rRl2bIpUuw
 id: file
 label: File
 plugin: file

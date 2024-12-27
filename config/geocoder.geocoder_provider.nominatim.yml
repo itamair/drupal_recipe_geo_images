@@ -2,6 +2,8 @@ uuid: 7075e43b-aa21-4de3-af47-33ad5dca858d
 langcode: en
 status: true
 dependencies: {  }
+_core:
+  default_config_hash: Rn8CZN6Vw4iGAOdYfUQMDpq3Ldp0W9Iovtte-a7Fl9A
 id: nominatim
 label: Nominatim
 plugin: nominatim

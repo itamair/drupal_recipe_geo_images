@@ -5,6 +5,8 @@ dependencies:
   config:
     - field.storage.media.field_exif_creation_date
     - media.type.geo_image
+_core:
+  default_config_hash: YJe9gFy_pRoPErDSvsWu7MYNYT4U_PbYZLznSkb6H94
 id: media.geo_image.field_exif_creation_date
 field_name: field_exif_creation_date
 entity_type: media
