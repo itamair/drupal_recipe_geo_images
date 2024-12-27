@@ -14,7 +14,7 @@ dependencies:
     - path
     - svg_image
 _core:
-  default_config_hash: sIMrZnm19Prpf_KgD-KCmGIxuUx9KIhsQucfO4S2Lb4
+  default_config_hash: B2WciV3HzfYGPbgX69XwwD-CAerjp_7vtM8yzBLfa1w
 id: media.geo_image.default
 targetEntityType: media
 bundle: geo_image
@@ -55,9 +55,9 @@ content:
             lat: 0.0
             lon: 0.0
           zoomControlPosition: topleft
-          zoom: 5
+          zoom: 16
           minZoom: 1
-          maxZoom: 18
+          maxZoom: 20
           zoomFiner: 0
         scroll_zoom_enabled: 1
       input:
@@ -66,12 +66,12 @@ content:
       toolbar:
         position: topright
         marker: defaultMarker
-        drawPolyline: true
-        drawRectangle: true
-        drawPolygon: true
+        drawPolyline: false
+        drawRectangle: false
+        drawPolygon: false
         drawCircle: false
         drawText: false
-        editMode: true
+        editMode: false
         dragMode: true
         cutPolygon: false
         removalMode: true
