@@ -15,6 +15,7 @@
         "drupal/geofield": "^1.62",
         "drupal/leaflet": "^10.2",
         "drupal/geocoder": "^4.26",
-        "drupal/media_library_importer": "^2.1"
+        "drupal/media_library_importer": "^2.1",
+        "pschocke/google-maps-links": "dev-master"
     }
 }
