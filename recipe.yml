@@ -18,7 +18,6 @@ config:
     - field.storage.media.field_media_image
     - field.storage.media.field_generate_host_content
     - field.storage.media.field_geofield
-    - field.storage.media.field_media_image
     - field.storage.node.field_geo_image_media
   import:
     media: '*'
