@@ -1,0 +1,23 @@
+uuid: a2d771bf-ba25-4643-ab52-782a8227c695
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.media.field_generate_host_content
+    - media.type.geo_image
+id: media.geo_image.field_generate_host_content
+field_name: field_generate_host_content
+entity_type: media
+bundle: geo_image
+label: 'Generate Host content'
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    value: 0
+default_value_callback: ''
+settings:
+  on_label: 'On'
+  off_label: 'Off'
+field_type: boolean

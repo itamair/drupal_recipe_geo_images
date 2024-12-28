@@ -5,12 +5,14 @@ dependencies:
   config:
     - field.field.media.geo_image.field_address
     - field.field.media.geo_image.field_exif_creation_date
+    - field.field.media.geo_image.field_generate_host_content
     - field.field.media.geo_image.field_geofield
     - field.field.media.geo_image.field_media_image
-    - image.style.large
+    - image.style.uncropped_960w_webp
     - media.type.geo_image
   module:
     - leaflet
+    - link
     - svg_image
 _core:
   default_config_hash: 7TpLjz2UbyX3Yg_ssTHCNc_tIUaDrBO7AnUGAFxR_bk
@@ -83,7 +85,7 @@ content:
           lat: 0.0
           lon: 0.0
         zoomControlPosition: topleft
-        zoom: 5
+        zoom: 15
         minZoom: 1
         maxZoom: 18
         zoomFiner: 0
@@ -151,7 +153,7 @@ content:
     label: visually_hidden
     settings:
       image_link: ''
-      image_style: large
+      image_style: uncropped_960w_webp
       image_loading:
         attribute: lazy
       svg_attributes:
@@ -161,8 +163,21 @@ content:
     third_party_settings: {  }
     weight: 0
     region: content
+  geofield_googlemaps_link:
+    type: link
+    label: hidden
+    settings:
+      trim_length: 80
+      url_only: false
+      url_plain: false
+      rel: '0'
+      target: _blank
+    third_party_settings: {  }
+    weight: 4
+    region: content
 hidden:
   created: true
+  field_generate_host_content: true
   langcode: true
   name: true
   thumbnail: true
