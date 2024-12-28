@@ -11,13 +11,5 @@ install:
   - leaflet_markercluster
   - geocoder_geofield
 config:
-  # Treat all field storages strictly, since they influence the database layout.
-  strict:
-    - field.storage.media.field_address
-    - field.storage.media.field_exif_creation_date
-    - field.storage.media.field_media_image
-    - field.storage.media.field_generate_host_content
-    - field.storage.media.field_geofield
-    - field.storage.node.field_geo_image_media
   import:
     media: '*'
