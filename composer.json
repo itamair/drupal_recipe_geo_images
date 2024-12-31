@@ -16,6 +16,6 @@
         "drupal/leaflet": "^10.2",
         "drupal/geocoder": "^4.26",
         "drupal/media_library_importer": "^2.1",
-        "itamair/google-maps-links": "^2.0"
+        "pschocke/google-maps-links": "^1.1"
     }
 }
