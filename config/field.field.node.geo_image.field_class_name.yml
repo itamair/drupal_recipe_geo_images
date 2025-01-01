@@ -1,0 +1,21 @@
+uuid: 0dcf6d45-44a2-4a19-ab82-65f412facc2b
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_class_name
+    - node.type.geo_image
+id: node.geo_image.field_class_name
+field_name: field_class_name
+entity_type: node
+bundle: geo_image
+label: 'Class Name'
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    value: opacity-50
+default_value_callback: ''
+settings: {  }
+field_type: string

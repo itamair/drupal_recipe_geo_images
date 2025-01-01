@@ -3,10 +3,13 @@ langcode: en
 status: true
 dependencies:
   config:
+    - field.field.node.geo_image.field_class_name
     - field.field.node.geo_image.field_geo_image_media
     - node.type.geo_image
   module:
     - user
+_core:
+  default_config_hash: 7SPwTQqPo3jM0hI45DysWYqKnlI906Jgwe9CHQsFl_A
 id: node.geo_image.default
 targetEntityType: node
 bundle: geo_image
@@ -27,4 +30,5 @@ content:
     weight: 1
     region: content
 hidden:
+  field_class_name: true
   langcode: true

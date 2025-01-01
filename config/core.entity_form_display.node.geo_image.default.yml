@@ -3,12 +3,15 @@ langcode: en
 status: true
 dependencies:
   config:
+    - field.field.node.geo_image.field_class_name
     - field.field.node.geo_image.field_geo_image_media
     - node.type.geo_image
   module:
     - content_moderation
     - media_library
     - path
+_core:
+  default_config_hash: '-LNw3fSk1SG3iwJLUms0rydU6KqI8smhnWtfF2-7fNU'
 id: node.geo_image.default
 targetEntityType: node
 bundle: geo_image
@@ -19,6 +22,14 @@ content:
     weight: 4
     region: content
     settings: {  }
+    third_party_settings: {  }
+  field_class_name:
+    type: string_textfield
+    weight: 26
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
     third_party_settings: {  }
   field_geo_image_media:
     type: media_library_widget

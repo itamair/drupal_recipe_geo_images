@@ -1,0 +1,72 @@
+uuid: 8e2191e9-448d-47e4-b65f-40bcd11be8dc
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.media.leaflet_popup
+    - field.field.media.geo_image.field_address
+    - field.field.media.geo_image.field_exif_creation_date
+    - field.field.media.geo_image.field_generate_host_content
+    - field.field.media.geo_image.field_geofield
+    - field.field.media.geo_image.field_media_image
+    - image.style.uncropped_300w_webp
+    - media.type.geo_image
+  module:
+    - layout_builder
+    - link
+    - svg_image
+third_party_settings:
+  layout_builder:
+    enabled: false
+    allow_custom: false
+_core:
+  default_config_hash: 2ISo5DyW75dQatsuZpBDmt1WnAJVMBaQE-jAPqxijhs
+id: media.geo_image.leaflet_popup
+targetEntityType: media
+bundle: geo_image
+mode: leaflet_popup
+content:
+  field_address:
+    type: string
+    label: hidden
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 0
+    region: content
+  field_media_image:
+    type: image
+    label: visually_hidden
+    settings:
+      image_link: content
+      image_style: uncropped_300w_webp
+      image_loading:
+        attribute: lazy
+      svg_attributes:
+        width: null
+        height: null
+      svg_render_as_image: true
+    third_party_settings: {  }
+    weight: 1
+    region: content
+  geofield_googlemaps_link:
+    type: link
+    label: hidden
+    settings:
+      trim_length: 80
+      url_only: false
+      url_plain: false
+      rel: '0'
+      target: _blank
+    third_party_settings: {  }
+    weight: 2
+    region: content
+hidden:
+  created: true
+  field_exif_creation_date: true
+  field_generate_host_content: true
+  field_geofield: true
+  langcode: true
+  name: true
+  thumbnail: true
+  uid: true

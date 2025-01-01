@@ -1,0 +1,11 @@
+uuid: 76dc0e23-0fb0-4c3e-b13c-7791af85e776
+langcode: en
+status: true
+dependencies:
+  module:
+    - media
+id: media.leaflet_popup
+label: 'Leaflet Popup'
+description: ''
+targetEntityType: media
+cache: true
