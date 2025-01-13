@@ -16,8 +16,9 @@ config:
     media: '*'
   actions:
     system.site:
-      page:
-        front: /geo-images-map
+      simpleConfigUpdate:
+        page:
+          front: /geo-images-map
     views.view.media:
       simpleConfigUpdate:
         dependencies:
