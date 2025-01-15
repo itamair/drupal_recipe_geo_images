@@ -20,20 +20,12 @@ third_party_settings:
     enabled: false
     allow_custom: false
 _core:
-  default_config_hash: 2ISo5DyW75dQatsuZpBDmt1WnAJVMBaQE-jAPqxijhs
+  default_config_hash: 2mnVN2oLBlxv9nUQwa80bQdY-w3rGvvMipwgTBw1dQ0
 id: media.geo_image.leaflet_popup
 targetEntityType: media
 bundle: geo_image
 mode: leaflet_popup
 content:
-  field_address:
-    type: string
-    label: hidden
-    settings:
-      link_to_entity: false
-    third_party_settings: {  }
-    weight: 0
-    region: content
   field_media_image:
     type: image
     label: visually_hidden
@@ -47,7 +39,7 @@ content:
         height: null
       svg_render_as_image: true
     third_party_settings: {  }
-    weight: 1
+    weight: 0
     region: content
   geofield_googlemaps_link:
     type: link
@@ -59,10 +51,11 @@ content:
       rel: '0'
       target: _blank
     third_party_settings: {  }
-    weight: 2
+    weight: 1
     region: content
 hidden:
   created: true
+  field_address: true
   field_exif_creation_date: true
   field_generate_host_content: true
   field_geofield: true

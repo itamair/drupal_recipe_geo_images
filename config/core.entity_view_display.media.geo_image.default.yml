@@ -15,7 +15,7 @@ dependencies:
     - link
     - svg_image
 _core:
-  default_config_hash: 7TpLjz2UbyX3Yg_ssTHCNc_tIUaDrBO7AnUGAFxR_bk
+  default_config_hash: 2ISo5DyW75dQatsuZpBDmt1WnAJVMBaQE-jAPqxijhs
 id: media.geo_image.default
 targetEntityType: media
 bundle: geo_image

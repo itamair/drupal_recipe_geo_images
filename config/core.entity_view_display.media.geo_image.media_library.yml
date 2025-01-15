@@ -14,7 +14,7 @@ dependencies:
   module:
     - svg_image
 _core:
-  default_config_hash: 3HDZY3nK8S1VEDFsihiuyodLVNBzcY2IXDIqyhgb_2Q
+  default_config_hash: fEswdEnUquBQ5Qxyszsaz0-_NRSNNnu_MRIc5Pu7a7M
 id: media.geo_image.media_library
 targetEntityType: media
 bundle: geo_image
@@ -42,6 +42,7 @@ hidden:
   field_generate_host_content: true
   field_geofield: true
   field_media_image: true
+  geofield_googlemaps_link: true
   langcode: true
   name: true
   uid: true
