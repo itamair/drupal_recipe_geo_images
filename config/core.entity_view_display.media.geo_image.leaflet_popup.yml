@@ -30,7 +30,7 @@ content:
     type: image
     label: visually_hidden
     settings:
-      image_link: content
+      image_link: ''
       image_style: uncropped_300w_webp
       image_loading:
         attribute: lazy
@@ -59,7 +59,6 @@ hidden:
   field_exif_creation_date: true
   field_generate_host_content: true
   field_geofield: true
-  langcode: true
   name: true
   thumbnail: true
   uid: true
