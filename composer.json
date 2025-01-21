@@ -12,11 +12,12 @@
         }
     ],
     "require": {
+        "drupal/date_filter": "^1.0",
+        "drupal/geocoder": "^4.26",
         "drupal/geofield": "^1.62",
         "drupal/leaflet": "^10.2",
-        "drupal/geocoder": "^4.26",
         "drupal/media_library_importer": "^2.1",
-        "pschocke/google-maps-links": "^1.1",
-        "itamair/geo_images_custom":"^1.0.0"
+        "itamair/geo_images_custom":"^1.0.0",
+        "pschocke/google-maps-links": "^1.1"
     }
 }

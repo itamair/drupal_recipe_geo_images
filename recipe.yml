@@ -2,15 +2,16 @@ name: Drupal Recipe Geo Images'
 description: 'Enables advanced Geo Mapping functionalities with Media Images'
 type: 'Geo Mapping'
 install:
+  - date_filter
+  - geofield
+  - geocoder_geofield
+  - geo_images_custom:geo_images_custom
+  - leaflet_views
+  - leaflet_markercluster
   - node
   - media
   - media_library_importer
   - media_image_exif_importer
-  - geofield
-  - leaflet_views
-  - leaflet_markercluster
-  - geocoder_geofield
-  - geo_images_custom:geo_images_custom
 config:
   import:
     media: '*'
