@@ -1,12 +1,12 @@
-uuid: 897aa223-e74d-4ce9-b45f-0f46678ac25a
+uuid: e167842d-a78b-4324-82d0-ea1123ccf273
 langcode: en
 status: true
 dependencies:
   config:
     - field.storage.media.field_exif_creation_date
     - media.type.geo_image
-_core:
-  default_config_hash: YJe9gFy_pRoPErDSvsWu7MYNYT4U_PbYZLznSkb6H94
+  module:
+    - datetime
 id: media.geo_image.field_exif_creation_date
 field_name: field_exif_creation_date
 entity_type: media
@@ -18,4 +18,4 @@ translatable: false
 default_value: {  }
 default_value_callback: ''
 settings: {  }
-field_type: timestamp
+field_type: datetime

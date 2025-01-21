@@ -1,8 +1,9 @@
-uuid: ff11bcda-c899-4f67-8261-8280570acff9
+uuid: 9a3af40c-ebce-49e2-8bc3-7e1346317169
 langcode: en
 status: true
 dependencies:
   config:
+    - core.entity_view_mode.media.3_2_small
     - field.field.media.geo_image.field_address
     - field.field.media.geo_image.field_exif_creation_date
     - field.field.media.geo_image.field_generate_host_content
@@ -11,23 +12,26 @@ dependencies:
     - image.style.uncropped_960w_webp
     - media.type.geo_image
   module:
-    - datetime
+    - layout_builder
     - leaflet
     - link
     - svg_image
+third_party_settings:
+  layout_builder:
+    enabled: false
+    allow_custom: false
 _core:
   default_config_hash: bg9Nf-3i6hdFr7Pp0rgeHjvzmIru83qz8r6EHzvm2rs
-id: media.geo_image.default
+id: media.geo_image.3_2_small
 targetEntityType: media
 bundle: geo_image
-mode: default
+mode: 3_2_small
 content:
-  field_exif_creation_date:
-    type: datetime_default
+  field_address:
+    type: string
     label: hidden
     settings:
-      timezone_override: ''
-      format_type: olivero_medium
+      link_to_entity: false
     third_party_settings: {  }
     weight: 1
     region: content
@@ -156,11 +160,11 @@ content:
       rel: '0'
       target: _blank
     third_party_settings: {  }
-    weight: 3
+    weight: 4
     region: content
 hidden:
   created: true
-  field_address: true
+  field_exif_creation_date: true
   field_generate_host_content: true
   name: true
   thumbnail: true

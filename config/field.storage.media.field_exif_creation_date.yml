@@ -1,17 +1,17 @@
-uuid: 93daf123-f170-4c81-a687-c73384757b1c
+uuid: 95166fca-171b-4876-947d-3c7e56ac37c8
 langcode: en
 status: true
 dependencies:
   module:
+    - datetime
     - media
-_core:
-  default_config_hash: YmKIBpIDaCjvryinBx_4pxEjYc8tpY1On3Lge3kePr0
 id: media.field_exif_creation_date
 field_name: field_exif_creation_date
 entity_type: media
-type: timestamp
-settings: {  }
-module: core
+type: datetime
+settings:
+  datetime_type: datetime
+module: datetime
 locked: false
 cardinality: 1
 translatable: true

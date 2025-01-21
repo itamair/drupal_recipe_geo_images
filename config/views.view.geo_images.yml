@@ -18,9 +18,9 @@ dependencies:
     - svg_image
     - user
 _core:
-  default_config_hash: OShrq_KNBgxLy1_V8uFhx0eccI9g--Kf3KK_YMp0c7k
+  default_config_hash: 9_1Yr0FXa20K_g-we97iMm487HQhsjWs_VTDFNxRXg4
 id: geo_images
-label: 'Geo Images'
+label: 'Geo Images Map'
 module: views
 description: ''
 tag: ''
@@ -451,10 +451,10 @@ display:
           map_position:
             force: false
             center:
-              lat: 0.0
-              lon: 0.0
+              lat: 41.8933
+              lon: 12.4829
             zoomControlPosition: topleft
-            zoom: 5
+            zoom: 6
             minZoom: 1
             maxZoom: 18
             zoomFiner: 0
@@ -572,9 +572,13 @@ display:
       path: geo-images-map
       menu:
         type: normal
-        title: 'Geo Images Map'
+        title: Map
+        description: ''
+        weight: 0
+        expanded: false
         menu_name: main
         parent: ''
+        context: '0'
     cache_metadata:
       max-age: -1
       contexts:
