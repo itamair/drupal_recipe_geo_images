@@ -3,6 +3,7 @@ description: 'Enables advanced Geo Mapping functionalities with Media Images'
 type: 'Geo Mapping'
 install:
   - date_filter
+  - color_field
   - geofield
   - geocoder_geofield
   - geo_images_custom:geo_images_custom
@@ -12,6 +13,7 @@ install:
   - media
   - media_library_importer
   - media_image_exif_importer
+  - viewfield
 config:
   import:
     media: '*'

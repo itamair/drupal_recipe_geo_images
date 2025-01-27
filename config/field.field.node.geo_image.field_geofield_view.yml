@@ -1,0 +1,55 @@
+uuid: e783d389-bd05-4735-8388-50cba46f555e
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_geofield_view
+    - node.type.geo_image
+    - views.view.geo_images
+  module:
+    - viewfield
+id: node.geo_image.field_geofield_view
+field_name: field_geofield_view
+entity_type: node
+bundle: geo_image
+label: 'Geofield View'
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    target_uuid: 6aeccd23-eced-49e2-8323-74910aba8b6c
+    display_id: leaflet_map
+    arguments: '[node:nid]'
+    items_to_display: ''
+    token_help: ''
+default_value_callback: ''
+settings:
+  force_default: true
+  allowed_views:
+    geo_images: geo_images
+    content: '0'
+    geo_images_list: '0'
+    latest: '0'
+    media: '0'
+    media_library: '0'
+    moderated_content: '0'
+    user_admin_people: '0'
+    publishing_content: '0'
+    recent_content: '0'
+    redirect: '0'
+    redirect_404: '0'
+    scheduler_scheduled_content: '0'
+    taxonomy_term: '0'
+    watchdog: '0'
+  allowed_display_types:
+    page: page
+    attachment: '0'
+    block: '0'
+    default: '0'
+    feed: '0'
+  handler: 'default:view'
+  handler_settings:
+    target_bundles: null
+    auto_create: false
+field_type: viewfield

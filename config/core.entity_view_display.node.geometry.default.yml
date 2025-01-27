@@ -1,0 +1,47 @@
+uuid: 7d5cad85-3a74-43a8-9bcc-70c7cca9560e
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.geometry.field_fill_color
+    - field.field.node.geometry.field_fill_color_opacity
+    - field.field.node.geometry.field_fill_opacity
+    - field.field.node.geometry.field_geofield
+    - field.field.node.geometry.field_geofield_view
+    - field.field.node.geometry.field_stroke_color
+    - field.field.node.geometry.field_stroke_color_opacity
+    - field.field.node.geometry.field_stroke_opacity
+    - field.field.node.geometry.field_stroke_weight
+    - node.type.geometry
+  module:
+    - user
+    - viewfield
+id: node.geometry.default
+targetEntityType: node
+bundle: geometry
+mode: default
+content:
+  field_geofield_view:
+    type: viewfield_default
+    label: hidden
+    settings:
+      view_title: hidden
+      always_build_output: false
+      empty_view_title: hidden
+    third_party_settings: {  }
+    weight: 0
+    region: content
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 1
+    region: content
+hidden:
+  field_fill_color: true
+  field_fill_color_opacity: true
+  field_fill_opacity: true
+  field_geofield: true
+  field_stroke_color: true
+  field_stroke_color_opacity: true
+  field_stroke_opacity: true
+  field_stroke_weight: true

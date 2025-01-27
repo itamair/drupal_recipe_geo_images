@@ -1,62 +1,63 @@
-uuid: 27be6dee-140f-4ed1-bf03-006c016cecc7
+uuid: 65c39e55-7ecb-4eb9-a8c1-df48e7d5487b
 langcode: en
 status: true
 dependencies:
   config:
-    - field.field.media.geo_image.field_address
-    - field.field.media.geo_image.field_exif_creation_date
-    - field.field.media.geo_image.field_generate_host_content
-    - field.field.media.geo_image.field_geofield
-    - field.field.media.geo_image.field_media_image
-    - image.style.thumbnail
-    - media.type.geo_image
+    - field.field.node.geometry.field_fill_color
+    - field.field.node.geometry.field_fill_color_opacity
+    - field.field.node.geometry.field_fill_opacity
+    - field.field.node.geometry.field_geofield
+    - field.field.node.geometry.field_geofield_view
+    - field.field.node.geometry.field_stroke_color
+    - field.field.node.geometry.field_stroke_color_opacity
+    - field.field.node.geometry.field_stroke_opacity
+    - field.field.node.geometry.field_stroke_weight
+    - node.type.geometry
   module:
-    - datetime
+    - color_field
+    - content_moderation
     - leaflet
     - path
-    - svg_image
-_core:
-  default_config_hash: yqpUp8hzL07igGzCudv8HIWcKjVUI1UiIzwUWH66Ccc
-id: media.geo_image.default
-targetEntityType: media
-bundle: geo_image
+id: node.geometry.default
+targetEntityType: node
+bundle: geometry
 mode: default
 content:
   created:
     type: datetime_timestamp
+    weight: 10
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  field_fill_color:
+    type: color_field_widget_html5
     weight: 7
     region: content
-    settings: {  }
+    settings:
+      show_extra: false
     third_party_settings: {  }
-  field_address:
-    type: string_textfield
-    weight: 4
+  field_fill_color_opacity:
+    type: color_field_widget_html5
+    weight: 6
     region: content
     settings:
-      size: 60
+      show_extra: false
+    third_party_settings: {  }
+  field_fill_opacity:
+    type: number
+    weight: 8
+    region: content
+    settings:
       placeholder: ''
-    third_party_settings: {  }
-  field_exif_creation_date:
-    type: datetime_default
-    weight: 1
-    region: content
-    settings: {  }
-    third_party_settings: {  }
-  field_generate_host_content:
-    type: boolean_checkbox
-    weight: 5
-    region: content
-    settings:
-      display_label: true
     third_party_settings: {  }
   field_geofield:
     type: leaflet_widget_default
-    weight: 3
+    weight: 1
     region: content
     settings:
       map:
         leaflet_map: 'OSM Mapnik'
-        height: 500
+        height: 600
         auto_center: 1
         map_position:
           force: false
@@ -64,7 +65,7 @@ content:
             lat: 0.0
             lon: 0.0
           zoomControlPosition: topleft
-          zoom: 15
+          zoom: 12
           minZoom: 1
           maxZoom: 18
           zoomFiner: 0
@@ -74,13 +75,13 @@ content:
         readonly: false
       toolbar:
         position: topright
-        marker: defaultMarker
-        drawPolyline: false
-        drawRectangle: false
-        drawPolygon: false
+        marker: none
+        drawPolyline: true
+        drawRectangle: true
+        drawPolygon: true
         drawCircle: false
         drawText: false
-        editMode: false
+        editMode: true
         dragMode: true
         cutPolygon: false
         removalMode: true
@@ -89,18 +90,18 @@ content:
         control: true
         options: '{"position":"topleft","title":"Reset View"}'
       map_scale:
-        control: true
+        control: false
         options: '{"position":"bottomright","maxWidth":100,"metric":true,"imperial":false,"updateWhenIdle":false}'
       fullscreen:
         control: true
         options: '{"position":"topleft","pseudoFullscreen":false}'
-      path: '{"color":"#3388ff","opacity":"1.0","stroke":true,"weight":3,"fill":"depends","fillColor":"*","fillOpacity":"0.2","radius":"6"}'
+      path: '{"color":"[node:field_stroke_color:color]","opacity":"[node:field_stroke_opacity]","stroke":true,"weight":"[node:field_stroke_weight:value]","fillColor":"[node:field_fill_color:color]","fillOpacity":"[node:field_fill_opacity]","radius":"6"}'
       locate:
         control: false
         options: '{"position":"topright","setView":"untilPanOrZoom","returnToPrevBounds":true,"keepCurrentZoomLevel":true,"strings":{"title":"Locate my position"}}'
         automatic: false
       geocoder:
-        control: false
+        control: true
         settings:
           autocomplete:
             placeholder: 'Search Address'
@@ -108,30 +109,83 @@ content:
           position: topright
           input_size: 20
           providers:
-            file:
-              weight: 0
-              checked: false
             nominatim:
+              weight: 1
+              checked: true
+            file:
               weight: 0
               checked: false
           min_terms: 4
           delay: 800
           zoom: 16
-          popup: false
+          popup: true
           options: ''
       geometry_validation: '1'
       feature_properties:
         values: ''
     third_party_settings: {  }
-  field_media_image:
-    type: image_image
+  field_stroke_color:
+    type: color_field_widget_html5
+    weight: 4
+    region: content
+    settings:
+      show_extra: false
+    third_party_settings: {  }
+  field_stroke_color_opacity:
+    type: color_field_widget_html5
     weight: 2
     region: content
     settings:
-      progress_indicator: throbber
-      preview_image_style: thumbnail
+      show_extra: false
     third_party_settings: {  }
-  name:
+  field_stroke_opacity:
+    type: number
+    weight: 5
+    region: content
+    settings:
+      placeholder: ''
+    third_party_settings: {  }
+  field_stroke_weight:
+    type: number
+    weight: 3
+    region: content
+    settings:
+      placeholder: ''
+    third_party_settings: {  }
+  moderation_state:
+    type: moderation_state_default
+    weight: 15
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  path:
+    type: path
+    weight: 13
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  promote:
+    type: boolean_checkbox
+    weight: 11
+    region: content
+    settings:
+      display_label: true
+    third_party_settings: {  }
+  status:
+    type: boolean_checkbox
+    weight: 16
+    region: content
+    settings:
+      display_label: true
+    third_party_settings: {  }
+  sticky:
+    type: boolean_checkbox
+    weight: 12
+    region: content
+    settings:
+      display_label: true
+    third_party_settings: {  }
+  title:
     type: string_textfield
     weight: 0
     region: content
@@ -139,22 +193,9 @@ content:
       size: 60
       placeholder: ''
     third_party_settings: {  }
-  path:
-    type: path
-    weight: 8
-    region: content
-    settings: {  }
-    third_party_settings: {  }
-  status:
-    type: boolean_checkbox
-    weight: 9
-    region: content
-    settings:
-      display_label: true
-    third_party_settings: {  }
   uid:
     type: entity_reference_autocomplete
-    weight: 6
+    weight: 9
     region: content
     settings:
       match_operator: CONTAINS
@@ -162,7 +203,13 @@ content:
       size: 60
       placeholder: ''
     third_party_settings: {  }
+  url_redirects:
+    weight: 14
+    region: content
+    settings: {  }
+    third_party_settings: {  }
 hidden:
+  field_geofield_view: true
   publish_on: true
   publish_state: true
   unpublish_on: true

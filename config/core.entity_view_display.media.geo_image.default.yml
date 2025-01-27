@@ -8,7 +8,7 @@ dependencies:
     - field.field.media.geo_image.field_generate_host_content
     - field.field.media.geo_image.field_geofield
     - field.field.media.geo_image.field_media_image
-    - image.style.uncropped_960w_webp
+    - image.style.16_9_1312x738_focal_point_webp
     - media.type.geo_image
   module:
     - datetime
@@ -16,7 +16,7 @@ dependencies:
     - link
     - svg_image
 _core:
-  default_config_hash: bg9Nf-3i6hdFr7Pp0rgeHjvzmIru83qz8r6EHzvm2rs
+  default_config_hash: WfxBXcE2kZJ3qptV_2FszX6yePsBmcl5FdW5l3pMHvA
 id: media.geo_image.default
 targetEntityType: media
 bundle: geo_image
@@ -29,7 +29,7 @@ content:
       timezone_override: ''
       format_type: olivero_medium
     third_party_settings: {  }
-    weight: 1
+    weight: 0
     region: content
   field_geofield:
     type: leaflet_formatter_default
@@ -136,7 +136,7 @@ content:
     label: visually_hidden
     settings:
       image_link: ''
-      image_style: uncropped_960w_webp
+      image_style: 16_9_1312x738_focal_point_webp
       image_loading:
         attribute: lazy
       svg_attributes:
@@ -144,7 +144,7 @@ content:
         height: null
       svg_render_as_image: true
     third_party_settings: {  }
-    weight: 0
+    weight: 1
     region: content
   geofield_googlemaps_link:
     type: link

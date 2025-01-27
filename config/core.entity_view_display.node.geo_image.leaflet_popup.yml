@@ -6,6 +6,7 @@ dependencies:
     - core.entity_view_mode.node.leaflet_popup
     - field.field.node.geo_image.field_class_name
     - field.field.node.geo_image.field_geo_image_media
+    - field.field.node.geo_image.field_geofield_view
     - node.type.geo_image
   module:
     - layout_builder
@@ -15,7 +16,7 @@ third_party_settings:
     enabled: false
     allow_custom: false
 _core:
-  default_config_hash: ijZtSB_BmcLw-hxbnik8wyPty3OJrUIxaiQdp1yG368
+  default_config_hash: k0SPQW-roOI2URUgSXgBXqjFHj8qeHsphRL8hYnRdGA
 id: node.geo_image.leaflet_popup
 targetEntityType: node
 bundle: geo_image
@@ -37,3 +38,4 @@ content:
     region: content
 hidden:
   field_class_name: true
+  field_geofield_view: true

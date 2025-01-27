@@ -5,11 +5,12 @@ dependencies:
   config:
     - field.field.node.geo_image.field_class_name
     - field.field.node.geo_image.field_geo_image_media
+    - field.field.node.geo_image.field_geofield_view
     - node.type.geo_image
   module:
     - user
 _core:
-  default_config_hash: 7SPwTQqPo3jM0hI45DysWYqKnlI906Jgwe9CHQsFl_A
+  default_config_hash: ijZtSB_BmcLw-hxbnik8wyPty3OJrUIxaiQdp1yG368
 id: node.geo_image.default
 targetEntityType: node
 bundle: geo_image
@@ -31,4 +32,4 @@ content:
     region: content
 hidden:
   field_class_name: true
-  langcode: true
+  field_geofield_view: true

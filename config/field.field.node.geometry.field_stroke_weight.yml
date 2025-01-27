@@ -1,0 +1,25 @@
+uuid: 6d145bc2-e691-4c11-a616-3a1933621525
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_stroke_weight
+    - node.type.geometry
+id: node.geometry.field_stroke_weight
+field_name: field_stroke_weight
+entity_type: node
+bundle: geometry
+label: 'Stroke Weight'
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    value: 1
+default_value_callback: ''
+settings:
+  min: null
+  max: null
+  prefix: ''
+  suffix: ''
+field_type: integer
