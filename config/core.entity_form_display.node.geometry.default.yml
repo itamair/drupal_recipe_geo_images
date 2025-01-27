@@ -17,7 +17,7 @@ dependencies:
     - leaflet
     - path
 _core:
-  default_config_hash: O7PiKBX2tGvNTNYndoyJpCpSkY_-vaLBGmj4_46Mosc
+  default_config_hash: wN5c4Sc8YVA6xRLhqRMnKvFRxovOa9OupSIurX3DIso
 id: node.geometry.default
 targetEntityType: node
 bundle: geometry
@@ -55,10 +55,10 @@ content:
         map_position:
           force: false
           center:
-            lat: 0.0
-            lon: 0.0
+            lat: 42.638158
+            lon: 12.675884
           zoomControlPosition: topleft
-          zoom: 12
+          zoom: 7
           minZoom: 1
           maxZoom: 18
           zoomFiner: 0
