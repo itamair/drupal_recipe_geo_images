@@ -23,9 +23,11 @@ third_party_settings:
     unpublish_enable: false
     unpublish_required: false
     unpublish_revision: false
+_core:
+  default_config_hash: l9yzwmjQBF5cGKAxetgLX4_XbgrzpQ-r6Sz2T1vkqMY
 name: Geometry
 type: geometry
-description: null
+description: 'Use to create Geofield base Geometries (Linestrings, Polygons, etc.)'
 help: null
 new_revision: true
 preview_mode: 1

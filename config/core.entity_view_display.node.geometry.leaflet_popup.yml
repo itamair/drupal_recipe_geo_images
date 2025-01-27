@@ -5,12 +5,10 @@ dependencies:
   config:
     - core.entity_view_mode.node.leaflet_popup
     - field.field.node.geometry.field_fill_color
-    - field.field.node.geometry.field_fill_color_opacity
     - field.field.node.geometry.field_fill_opacity
     - field.field.node.geometry.field_geofield
     - field.field.node.geometry.field_geofield_view
     - field.field.node.geometry.field_stroke_color
-    - field.field.node.geometry.field_stroke_color_opacity
     - field.field.node.geometry.field_stroke_opacity
     - field.field.node.geometry.field_stroke_weight
     - node.type.geometry
@@ -21,6 +19,8 @@ third_party_settings:
   layout_builder:
     enabled: false
     allow_custom: false
+_core:
+  default_config_hash: jS3O-E1n3koZYWnQFnMOBT3yJSsxVwBKOSHJ71MtiaY
 id: node.geometry.leaflet_popup
 targetEntityType: node
 bundle: geometry
@@ -28,12 +28,10 @@ mode: leaflet_popup
 content: {  }
 hidden:
   field_fill_color: true
-  field_fill_color_opacity: true
   field_fill_opacity: true
   field_geofield: true
   field_geofield_view: true
   field_stroke_color: true
-  field_stroke_color_opacity: true
   field_stroke_opacity: true
   field_stroke_weight: true
   links: true

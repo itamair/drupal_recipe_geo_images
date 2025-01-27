@@ -4,12 +4,10 @@ status: true
 dependencies:
   config:
     - field.field.node.geometry.field_fill_color
-    - field.field.node.geometry.field_fill_color_opacity
     - field.field.node.geometry.field_fill_opacity
     - field.field.node.geometry.field_geofield
     - field.field.node.geometry.field_geofield_view
     - field.field.node.geometry.field_stroke_color
-    - field.field.node.geometry.field_stroke_color_opacity
     - field.field.node.geometry.field_stroke_opacity
     - field.field.node.geometry.field_stroke_weight
     - node.type.geometry
@@ -18,6 +16,8 @@ dependencies:
     - content_moderation
     - leaflet
     - path
+_core:
+  default_config_hash: O7PiKBX2tGvNTNYndoyJpCpSkY_-vaLBGmj4_46Mosc
 id: node.geometry.default
 targetEntityType: node
 bundle: geometry
@@ -32,13 +32,6 @@ content:
   field_fill_color:
     type: color_field_widget_html5
     weight: 7
-    region: content
-    settings:
-      show_extra: false
-    third_party_settings: {  }
-  field_fill_color_opacity:
-    type: color_field_widget_html5
-    weight: 6
     region: content
     settings:
       show_extra: false
@@ -127,13 +120,6 @@ content:
   field_stroke_color:
     type: color_field_widget_html5
     weight: 4
-    region: content
-    settings:
-      show_extra: false
-    third_party_settings: {  }
-  field_stroke_color_opacity:
-    type: color_field_widget_html5
-    weight: 2
     region: content
     settings:
       show_extra: false

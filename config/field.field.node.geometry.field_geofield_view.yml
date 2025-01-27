@@ -8,6 +8,8 @@ dependencies:
     - views.view.geo_images
   module:
     - viewfield
+_core:
+  default_config_hash: RfrsgwSFN3gi9HUPjm1Qzsbx2rn4qWEn0dpajuJ0Too
 id: node.geometry.field_geofield_view
 field_name: field_geofield_view
 entity_type: node
@@ -19,7 +21,7 @@ translatable: false
 default_value:
   -
     target_uuid: 6aeccd23-eced-49e2-8323-74910aba8b6c
-    display_id: geo_images_map
+    display_id: leaflet_map
     arguments: '[node:nid]'
     items_to_display: ''
     token_help: ''

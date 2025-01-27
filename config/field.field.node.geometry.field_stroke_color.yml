@@ -7,6 +7,8 @@ dependencies:
     - node.type.geometry
   module:
     - color_field
+_core:
+  default_config_hash: s1RqLk-G3qipD_gMS3V8VUg2tWl1bn23oFsTurdVG0o
 id: node.geometry.field_stroke_color
 field_name: field_stroke_color
 entity_type: node
@@ -15,7 +17,10 @@ label: 'Stroke Color'
 description: ''
 required: false
 translatable: false
-default_value: {  }
+default_value:
+  -
+    color: '#ff2600'
+    opacity: null
 default_value_callback: ''
 settings:
   opacity: 0

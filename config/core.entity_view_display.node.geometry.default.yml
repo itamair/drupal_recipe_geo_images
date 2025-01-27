@@ -4,18 +4,18 @@ status: true
 dependencies:
   config:
     - field.field.node.geometry.field_fill_color
-    - field.field.node.geometry.field_fill_color_opacity
     - field.field.node.geometry.field_fill_opacity
     - field.field.node.geometry.field_geofield
     - field.field.node.geometry.field_geofield_view
     - field.field.node.geometry.field_stroke_color
-    - field.field.node.geometry.field_stroke_color_opacity
     - field.field.node.geometry.field_stroke_opacity
     - field.field.node.geometry.field_stroke_weight
     - node.type.geometry
   module:
     - user
     - viewfield
+_core:
+  default_config_hash: CuS-DAWLARi71XWZEV6-oiArKMw8qNxz5vt73z_Qph4
 id: node.geometry.default
 targetEntityType: node
 bundle: geometry
@@ -38,10 +38,8 @@ content:
     region: content
 hidden:
   field_fill_color: true
-  field_fill_color_opacity: true
   field_fill_opacity: true
   field_geofield: true
   field_stroke_color: true
-  field_stroke_color_opacity: true
   field_stroke_opacity: true
   field_stroke_weight: true

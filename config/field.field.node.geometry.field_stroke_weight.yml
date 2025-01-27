@@ -5,6 +5,8 @@ dependencies:
   config:
     - field.storage.node.field_stroke_weight
     - node.type.geometry
+_core:
+  default_config_hash: V88d2v4HDgspfGK--DsoTgs6UBbMWRvq2PRzuJiaNxk
 id: node.geometry.field_stroke_weight
 field_name: field_stroke_weight
 entity_type: node
@@ -15,7 +17,7 @@ required: false
 translatable: false
 default_value:
   -
-    value: 1
+    value: 2
 default_value_callback: ''
 settings:
   min: null
