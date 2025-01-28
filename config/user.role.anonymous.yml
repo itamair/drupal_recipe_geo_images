@@ -1,0 +1,20 @@
+uuid: e0333324-08d8-4eae-8ab8-bd9ee6dcd6ec
+langcode: en
+status: true
+dependencies:
+  module:
+    - geocoder
+    - klaro
+    - media
+    - system
+_core:
+  default_config_hash: j5zLMOdJBqC0bMvSdth5UebkprJB8g_2FXHqhfpJzow
+id: anonymous
+label: 'Anonymous user'
+weight: 0
+is_admin: false
+permissions:
+  - 'access content'
+  - 'access geocoder api endpoints'
+  - 'use klaro'
+  - 'view media'
