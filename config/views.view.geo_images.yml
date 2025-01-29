@@ -1090,7 +1090,7 @@ display:
           fullscreen:
             control: true
             options: '{"position":"topleft","pseudoFullscreen":false}'
-          path: '{"color":"{{ field_stroke_color }}","opacity":"{{ field_stroke_opacity }}","stroke":true,"weight":"{{ field_stroke_weight }}","fillColor":"{{ field_fill_color }}","fillOpacity":"{{ field_fill_opacity }}","radius":"6","dashArray":"20, 20","dashOffset":"0"}'
+          path: '{"color":"{{ field_stroke_color }}","opacity":"{{ field_stroke_opacity }}","stroke":true,"weight":"{{ field_stroke_weight }}","fillColor":"{{ field_fill_color }}","fillOpacity":"{{ field_fill_opacity }}","radius":"6"}'
           geocoder:
             control: true
             settings:
